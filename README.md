@@ -38,6 +38,24 @@ This chart gives the reader a good overview of the current state of speed camera
 
 <img src="images/neighborhood.PNG" width = "800" >
 
+For the second visualization, an attempt to quantify speed camera violations per neighborhood was made. The rationale behind this was to see where most speed camera violations were concentrated. However, a visualization with only zipcode and average violations would not have been particularly useful - after all, what is a zipcode but a way to divide a city?
+
+This is where the ward and school location datasets came useful. The ward dataset was used to bridge the speed camera violations dataset with the school location dataset. Then, the number of schools for each zipcode were calculated. Next, the following formula was used to calculate what we will call the "Negative Social Impact" (NSI) score:
+
+No. of violations * log(No. of schools)
+
+The rationale behind this formula is that zipcodes with more schools AND higher numbers of speed camera violations would be punished by the score, since it is a safety hazard to people within that zipcode.
+
+Given that, the bar chart produced is rather simple in design. We end up with a chart with only two attributes, and some high-school level math under the hood. The y-axis is ordered according to which zipcode has the highest NSI score, making it easy for the reader to pick out which zipcodes to focus on. The x-axis shows the average NSI score for those zipcodes, so there might be some bias to zipcodes that have abnormally large spikes in violations, but taking the sum or count would not have made any more sense.
+
+The caption below the visualization helps the reader understand the math going on behind the scenes. The interpretation however, can be debated since there are many other ways to manipulate the math to punish areas with more schools and more violations.
+
+This chart gives a good snapshot and interpretation on how speed violations might negatively affect neighborhoods with a high concentration of schools. More school zones mean that more children are exposed to traffic safety hazards. This hazard is further compounded if those schools are within close proximity of roads where drivers tend to drive above the speed limit. As such, a program like that mentioned in [1] would help deter drivers from driving dangerously.
+
+<img src="images/zips.PNG" width = "800" >
+
+For the final visualization, it would be useful to see how each of these Zipcodes are performing in terms of speed camera violations over time. 
+
 ## References
 
 [1] Wisniewski, Mary. "City will add speed cameras near 3 schools, 2 parks this summer." Chicago Tribue. 3 July 2018. https://www.chicagotribune.com/news/ct-biz-speed-cameras-20180703-story.html
