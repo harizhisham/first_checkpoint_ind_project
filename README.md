@@ -18,11 +18,11 @@ Time to fire up Tableau Desktop. Be sure to have the most recent version of Tabl
 
 Start with Speed Camera Violations dataset. Load the speed camera violations into Tableau. Next, drag and drop the ward offices dataset into the same space. when prompted, join the two tables using an 'Inner Join', with Wards = Ward. 
 
-![](images/first_join.PNG)
+<img src="images/first_join.PNG" width = "500" >
 
 Next, drag the school location dataset and do the same thing. However, this time use a 'Left Join' with Zipcode = ZIPCODE instead.
 
-![](images/second_join.PNG)
+<img src="images/second_join.PNG" width = "500" >
 
 Now, we're ready to visualize.
 
