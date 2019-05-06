@@ -54,8 +54,24 @@ This chart gives a good snapshot and interpretation on how speed violations migh
 
 <img src="images/zips.PNG" width = "800" >
 
-For the final visualization, it would be useful to see how each of these Zipcodes are performing in terms of speed camera violations over time. 
+For the final visualization, it would be useful to see how each of these Zipcodes are performing in terms of speed camera violations over time. To do this, the visualization splits up each Zipcode into its own column and color, with average violations plotted over time from 2014 to 2018. Then, a trend line is added to each of the ten plots. What's produced is a comparison of violation trends across the top 10 Zipcodes with highest violations.
+
+On the y-axis is the average violations, while the x-axis is the date-time. Each Zipcode has its own color to help with identification and draw the reader's attention so that each chart is salient in the reader's mind. The legend was left there so that it can be used again with other charts (if needed) when combined on a dashbaord.
+
+However, this produces a very cluttered chart. It would have probably been better to include all ten Zipcodes as individual lines on a single unified chart. We would do away with individual trend lines, but it would produce a much cleaner chart. 
+
+This chart would be useful in pinponting Zipcodes with high levels of speed camera violations that might be underperforming similar Zipcodes. For example, in the above chart, we see all but two Zipcodes (60637 & 60617), experience a downard trend over time. It would be beneficial for the city to investigate why these areas are not improving over the last 4 years, and potentially invest more resources to curb speed camera violations. Remember, these are speed cameras installed close to school areas [2], so improving safety must be top priority!
+
+## 4. Dashboarding
+
+<img src="images/dashboard.PNG" width = "800" >
+
+Finally, we bring all of the visualizations together using Tableau's Dashboard function. The resulting dashboard is not great, but it is not the worst either. It has a clean look with white backgrounds and even segmentation. However, as pointed out above, the bottom chart makes the dashboard look cluttered. This could have been improved by using a simple line chart instead.
+
+This dashboard could potentially be used by the City of Chicago as a high-level snapshot into the state of speed camera violations in 'hotspots' around the city. It aims to tell the story that it is true the City is improving in curbing speed camera violations overall, but they need to now focus on Zipcodes with high numbers of schools still experiencing high levels of drivers speeding, in order to increase pedestrian safety. This could be used by the Mayor of Chicago as a potential talking point in the next Mayor election, either to affirm their work over the last 4 years, or used by a newcomer to refute an incumbent Mayor for not putting in enough effort. The coin can be flipped both ways.
 
 ## References
 
 [1] Wisniewski, Mary. "City will add speed cameras near 3 schools, 2 parks this summer." Chicago Tribue. 3 July 2018. https://www.chicagotribune.com/news/ct-biz-speed-cameras-20180703-story.html
+
+[2] Portal, Chicago Data. "Speed Camera Violations" Chicago Data Portal. 29 April 2018. https://data.cityofchicago.org/Transportation/Speed-Camera-Violations/hhkd-xvj4
